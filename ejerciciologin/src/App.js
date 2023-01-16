@@ -7,6 +7,7 @@ import Menu from './componentes/Menu'
 import { Component } from 'react';
 import {PHPLOGIN} from './componentes/Datos';
 import axios from 'axios';
+import md5 from 'md5';
 
 class App extends Component {
   constructor(props){
@@ -29,7 +30,7 @@ class App extends Component {
     */
     axios.post(PHPLOGIN,JSON.stringify({
       telefono:telefono,
-      password:password
+      password:md5(password)
     }))
     .then(res => {
       console.log(res.data.usuario);
