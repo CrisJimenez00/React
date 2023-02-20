@@ -1,1 +1,0 @@
-export const PHPLOGIN = "http://localhost/DWEC/login/login.php";
