@@ -8,7 +8,7 @@ import {
   Button,
   Input,
 } from "reactstrap";
-import { FARMACOS } from "../datos";
+import { FARMACOS } from "./datos";
 import { Toast } from "reactstrap";
 import { ToastHeader } from "reactstrap";
 import { ToastBody } from "reactstrap";
